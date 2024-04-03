@@ -3,78 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>YouTube Video Gallery</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: black; /* Establecer el color de fondo en negro */
-  }
-  
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 0; /* Eliminamos el espacio entre las celdas */
-    margin: -1px; /* Añadimos un margen negativo para eliminar cualquier espacio adicional */
-    padding: 0;
-  }
-  
-  .video {
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
-  }
-  
-  .video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0); /* Hacer el overlay transparente */
-    pointer-events: none; /* Permitir que los eventos del mouse pasen a través del overlay */
-  }
-</style>
+<title>YouTube Video Player</title>
 </head>
 <body>
 
-<div class="gallery">
-  <div class="video">
-    <div class="overlay"></div>
-    <iframe id="video1" width="560" height="315" src="https://www.youtube.com/embed/HOIbmEzgH3Y?autoplay=1&mute=1&rel=0&controls=0&showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  <div class="video">
-    <div class="overlay"></div>
-    <iframe id="video2" width="560" height="315" src="https://www.youtube.com/embed/803PsrStrcU?autoplay=1&mute=1&rel=0&controls=0&showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  <!-- Agrega los otros videos aquí -->
-</div>
-
-<script>
-  // Obtener los iframes de los videos
-  var videos = document.querySelectorAll('.video iframe');
-
-  // Función para reiniciar el video cuando termine
-  function restartVideo(event) {
-    event.target.contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
-  }
-
-  // Agregar evento 'ended' a cada video para reiniciarlos
-  videos.forEach(function(video) {
-    video.addEventListener('ended', function() {
-      this.contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
-    });
-  });
-</script>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0&controls=1" frameborder="0" allowfullscreen></iframe>
 
 </body>
 </html>
