@@ -8,8 +8,8 @@
     /* Estilo para los iframes */
     .grid-container {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Columnas adaptables */
-      gap: 10px; /* Espacio entre los iframes */
+      grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+      gap: 0; /* Sin espacio entre los iframes */
     }
     .grid-item {
       width: 100%;
@@ -18,8 +18,7 @@
     /* Estilos para dispositivos móviles */
     @media only screen and (max-width: 600px) {
       .grid-container {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Columnas adaptables para dispositivos móviles */
-        gap: 5px; /* Espacio entre los iframes para dispositivos móviles */
+        display: block; /* Cambia a un diseño de bloque para dispositivos móviles */
       }
     }
   </style>
@@ -29,33 +28,33 @@
   <div class="grid-container">
     <!-- Primer fila -->
     <div class="grid-item">
-      <iframe style='display:block;margin:auto;width:745px;max-width:100%;aspect-ratio:1.7780429594272076;' src='https://killerplayer.com/watch/video/480b46d8-88cf-4048-b500-871b96641904' frameborder="0" allow="autoplay; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+      <iframe src="video1.html" frameborder="0" width="100%" height="300"></iframe>
     </div>
     <div class="grid-item">
-      <iframe style='display:block;margin:auto;width:745px;max-width:100%;aspect-ratio:1.7780429594272076;' src='https://killerplayer.com/watch/video/4557452a-be42-4225-af71-9e298b2633e4' frameborder="0" allow="autoplay; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+      <iframe src="video2.html" frameborder="0" width="100%" height="300"></iframe>
     </div>
     <div class="grid-item">
-      <iframe style='display:block;margin:auto;width:745px;max-width:100%;aspect-ratio:1.7780429594272076;' src='https://killerplayer.com/watch/video/165cf6f2-bc62-4fb9-89f6-58e3b065fb0a' frameborder="0" allow="autoplay; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+      <iframe src="video3.html" frameborder="0" width="100%" height="300"></iframe>
     </div>
     <!-- Segunda fila -->
     <div class="grid-item">
-      <iframe style='display:block;margin:auto;width:745px;max-width:100%;aspect-ratio:1.7780429594272076;' src='https://killerplayer.com/watch/video/351f2ead-a2f3-4d7a-abc7-80bbed1204c4' frameborder="0" allow="autoplay; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+      <iframe src="video4.html" frameborder="0" width="100%" height="300"></iframe>
     </div>
     <div class="grid-item">
-      <iframe style='display:block;margin:auto;width:745px;max-width:100%;aspect-ratio:1.7780429594272076;' src='https://killerplayer.com/watch/video/6def47f9-3620-4e3d-a66b-4ea5b151afc1' frameborder="0" allow="autoplay; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+      <iframe src="video5.html" frameborder="0" width="100%" height="300"></iframe>
     </div>
     <div class="grid-item">
-      <iframe style='display:block;margin:auto;width:745px;max-width:100%;aspect-ratio:1.7780429594272076;' src='https://killerplayer.com/watch/video/34d403c8-21ac-4b2c-a3a9-7fb846f06761' frameborder="0" allow="autoplay; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+      <iframe src="video6.html" frameborder="0" width="100%" height="300"></iframe>
     </div>
     <!-- Tercera fila -->
     <div class="grid-item">
-      <iframe style='display:block;margin:auto;width:745px;max-width:100%;aspect-ratio:1.7780429594272076;' src='https://killerplayer.com/watch/video/eeb4dabc-6b95-4be4-82b5-6a1f031aa414' frameborder="0" allow="autoplay; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+      <iframe src="video7.html" frameborder="0" width="100%" height="300"></iframe>
     </div>
     <div class="grid-item">
-      <iframe style='display:block;margin:auto;width:745px;max-width:100%;aspect-ratio:1.7780429594272076;' src='https://killerplayer.com/watch/video/707fa357-757e-4f2f-a7b6-fb5ef00476aa' frameborder="0" allow="autoplay; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+      <iframe src="video8.html" frameborder="0" width="100%" height="300"></iframe>
     </div>
     <div class="grid-item">
-      <iframe style='display:block;margin:auto;width:745px;max-width:100%;aspect-ratio:1.7780429594272076;' src='https://killerplayer.com/watch/video/73a1eae9-344c-4f6d-b1d6-cd4c19c7966c' frameborder="0" allow="autoplay; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+      <iframe src="video9.html" frameborder="0" width="100%" height="300"></iframe>
     </div>
   </div>
 </body>
