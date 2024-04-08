@@ -8,11 +8,19 @@
     /* Estilo para los iframes */
     .grid-container {
       display: grid;
-      grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Columnas adaptables */
       gap: 10px; /* Espacio entre los iframes */
     }
     .grid-item {
       width: 100%;
+    }
+
+    /* Estilos para dispositivos móviles */
+    @media only screen and (max-width: 600px) {
+      .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Columnas adaptables para dispositivos móviles */
+        gap: 5px; /* Espacio entre los iframes para dispositivos móviles */
+      }
     }
   </style>
 </head>
